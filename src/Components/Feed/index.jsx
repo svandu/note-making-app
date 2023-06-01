@@ -1,8 +1,13 @@
-function Feed() {
+import Post from '../Post'
+
+// eslint-disable-next-line react/prop-types
+function Feed({ posts }) {
   return (
-    <div>
-        
-    </div>
+    <>
+        {posts.map(post => (
+          <Post key={post.id} post={post} />
+        ))}
+    </>
   )
 }
 
