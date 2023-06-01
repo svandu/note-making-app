@@ -1,0 +1,16 @@
+.home-container {
+    width: 100%;
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background-color: #fff;
+
+    .post a {
+        text-decoration: none;
+    }
+
+    .post a,
+    .post a:visited {
+        color: #000;
+    }
+}

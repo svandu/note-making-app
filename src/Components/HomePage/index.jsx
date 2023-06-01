@@ -1,5 +1,7 @@
-import Feed from '../Feed'
+import Feed from "../Feed"
+import './homepage.scss'
 
+// eslint-disable-next-line react/prop-types
 function HomePage({ posts }) {
   return (
     <main className="home-container">
@@ -12,4 +14,4 @@ function HomePage({ posts }) {
   )
 }
 
-export default HomePage
+export default HomePage;    
