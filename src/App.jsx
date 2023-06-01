@@ -48,12 +48,13 @@ function App() {
       <Header title="React JS Blog"/>
         <Routes>
             <Route path='/' element={<Nav search={search} setSearch={setSearch}/>}>
-                <Route path='/' element={<HomePage posts={posts}/>}/>
+                {/* <Route path='/' element={<HomePage posts={posts}/>}/> */}
                 <Route path='/post' element={<NewPost />}/>
                 <Route path='/post/:id' element={<PostPage />}/>
                 <Route path='/about' element={<About />}/>
             </Route>
         </Routes>
+        <HomePage posts={posts}/>
         <Footer/>
     </div>
   )
