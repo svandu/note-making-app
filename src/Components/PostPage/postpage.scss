@@ -1,0 +1,40 @@
+.postpage-container {
+    margin: 7.8rem 4rem;
+    .post {
+        margin: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid lightgray;
+    
+        a {
+            text-decoration: none;
+            }
+    
+          a:visited {
+            color: #000;
+          }
+    
+          .postDate {
+            font-size: 0.75rem;
+            margin-top: 0.25rem;
+          }
+          
+          .postBody {
+            margin: 1rem 0;
+          }
+    
+          button {
+            height: 48px;
+            min-width: 48px;
+            border-radius: 0.25rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            background-color: red;
+            color: #fff;
+            cursor: pointer;
+          }
+          
+          
+      }
+      
+
+}
