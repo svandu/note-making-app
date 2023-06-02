@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Post from '../Post'
 
 // eslint-disable-next-line react/prop-types
