@@ -1,16 +1,19 @@
 .newpost-container {
+   margin: auto;
+   padding: 0 0.7rem;
 
+   h2 {
+    text-align: center;
+   }
     .newPostForm {
-        display: flex;
-        flex-direction: column;
-
+      
         label {
             margin-top: 1rem;
           }
 
           textarea {
             font-family: 'Open Sans', sans-serif;
-            width: 100%;
+            width: 95%;
             min-height: 48px;
             font-size: 1rem;
             padding: 0.25rem;
@@ -29,19 +32,29 @@
             font-size: 1rem;
             cursor: pointer;
           }
+
+          input[type='text'] {
+            font-family: 'Open Sans', sans-serif;
+            width: 95%;
+            min-height: 48px;
+            font-size: 1rem;
+            padding: 0.25rem;
+            border-radius: 0.25rem;
+            margin-right: 0.25rem;
+            outline: none;
+          }
           
       }
+}
 
-      .newPostForm input[type='text'] {
-        font-family: 'Open Sans', sans-serif;
-        width: 100%;
-        min-height: 48px;
-        font-size: 1rem;
-        padding: 0.25rem;
-        border-radius: 0.25rem;
-        margin-right: 0.25rem;
-        outline: none;
+@media(min-width: 610px) {
+  .newpost-container {
+    
+    .newPostForm {
+      padding: 0 0.7rem;
+      textarea {
+        height: 300px;
       }
-      
-
+    }
+  }
 }

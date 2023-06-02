@@ -2,11 +2,10 @@
     width: 100%;
     background-color: #333;
     display: flex;
-    padding: 0 0 1rem 0;
+    padding: 1rem 0.7rem;
 
     .searchForm {
-        width: 80%;
-        padding: 1rem 0 0 0.75rem;
+        width: 65%;
 
         label {
             position: absolute;
@@ -48,10 +47,39 @@
         li:hover,
         li:focus {
             a  {
-                background-color: #eee;
-                color: #333;
+                text-decoration: underline;
                 cursor: pointer;
               }
         }
     }
+  }
+
+  @media(max-width: 680px){
+    .nav-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0;
+
+        ul {
+            text-align: right;
+          }
+          
+          li:hover,
+          li:focus{
+                a {
+                    text-transform: underline;
+                }
+          }
+
+          .searchForm {
+            width: 90%;
+            padding: .5rem 0;
+          }
+         
+          .searchForm input[type="text"] {
+            margin-left: 0.5rem;
+          }
+      }
   }
