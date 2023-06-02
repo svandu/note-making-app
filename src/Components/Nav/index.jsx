@@ -1,11 +1,14 @@
 // eslint-disable-next-line react/prop-types
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
+import Header from '../Header';
 import './nav.scss'
 
 // eslint-disable-next-line react/prop-types
 function Nav({ search, setSearch }) {
   return (
-    <nav className="nav-container">
+    <>
+      <Header title="React JS Blog"/>
+      <nav className="nav-container">
       <form className="searchForm" onSubmit={(e) => e.preventDefault()}>
         <label htmlFor="search">Search Posts</label>
         <input
@@ -22,6 +25,8 @@ function Nav({ search, setSearch }) {
         <li><Link to="/about">About</Link></li>
       </ul>
     </nav>
+    <Outlet />
+    </>
   );
 }
 
