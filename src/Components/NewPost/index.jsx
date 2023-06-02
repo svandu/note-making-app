@@ -1,9 +1,40 @@
-function NewPost() {
+import './newpost.scss'
+
+function NewPost({
+  // eslint-disable-next-line react/prop-types
+  handleSubmit,
+  // eslint-disable-next-line react/prop-types
+  postTitle,
+  // eslint-disable-next-line react/prop-types
+  setPostTitle,
+  // eslint-disable-next-line react/prop-types
+  postBody,
+  // eslint-disable-next-line react/prop-types
+  setPostBody,
+}) {
   return (
-    <main>
-        <h1>NewPost</h1>
+    <main className="newpost-container">
+      <h2>New Post</h2>
+      <form className="newPostForm" onSubmit={handleSubmit}>
+        <label htmlFor="postTitle">Title:</label>
+        <input
+          id="postTitle"
+          type="text"
+          required
+          value={postTitle}
+          onChange={(e) => setPostTitle(e.target.value)}
+        />
+        <label htmlFor="postBody">Post:</label>
+        <textarea
+          id="postBody"
+          required
+          value={postBody}
+          onChange={(e) => setPostBody(e.target.value)}
+        ></textarea>
+        <button type="submit">Add New Post</button>
+      </form>
     </main>
-  )
+  );
 }
 
-export default NewPost
+export default NewPost;
