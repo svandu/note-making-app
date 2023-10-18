@@ -1,5 +1,5 @@
 import Nav from "./Components/Nav";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import HomePage from "./Components/HomePage";
 import NewPost from "./Components/NewPost";
 import PostPage from "./Components/PostPage";
@@ -98,7 +98,7 @@ function App() {
           <Route path="/missing" element={<Missing />}/>
         </Route>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

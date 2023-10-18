@@ -18,8 +18,10 @@
   }
   
   #root {
-    flex-grow: 1;
+    /* flex-grow: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+
+    width: 100%;
   }

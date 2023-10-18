@@ -14,7 +14,7 @@ function NewPost({
 }) {
   return (
     <main className="newpost-container">
-      <h2>New Post</h2>
+      <h2>Create Your New Note</h2>
       <form className="newPostForm" onSubmit={handleSubmit}>
         <label htmlFor="postTitle">Title:</label>
         <input
@@ -24,14 +24,14 @@ function NewPost({
           value={postTitle}
           onChange={(e) => setPostTitle(e.target.value)}
         />
-        <label htmlFor="postBody">Post:</label>
+        <label htmlFor="postBody">Note:</label>
         <textarea
           id="postBody"
           required
           value={postBody}
           onChange={(e) => setPostBody(e.target.value)}
         ></textarea>
-        <button type="submit">Add New Post</button>
+        <button type="submit">Add New Note</button>
       </form>
     </main>
   );

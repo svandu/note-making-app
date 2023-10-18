@@ -1,22 +1,30 @@
-.post {
-  margin-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid lightgray;
-    .postDate {
-        font-size: 0.75rem;
-        margin-top: 0.25rem;
-      }
-      
-      .postBody {
-        margin: 1rem 0;
-      }
-}
-.post:first-child {
-    margin-top: 0;
-}
-  
-.post:last-child {
-border-bottom: none;
+.post-wrapper {
+
+  .post {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    // width: 100%;
+    height: 50%;
+    text-align: center;
+    
+    // border-bottom: 1px solid lightgray;
+      .postDate {
+          font-size: 0.75rem;
+          margin-top: 0.25rem;
+        }
+        
+        .postBody {
+          margin: 1rem 0;
+        }
+  }
+  .post:first-child {
+      margin-top: 0;
+  }
+    
+  .post:last-child {
+  border-bottom: none;
+  }
 }
 
   

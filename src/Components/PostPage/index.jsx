@@ -1,8 +1,10 @@
 import './postpage.scss'
 import { useParams, Link } from 'react-router-dom';
  
+// eslint-disable-next-line react/prop-types
 function PostPage({posts, handleDelete}) {
   const { id } = useParams();
+  // eslint-disable-next-line react/prop-types
   const post = posts.find(post => (post.id).toString() === id );
   return (
     <main className='postpage-container'>
@@ -18,7 +20,7 @@ function PostPage({posts, handleDelete}) {
         {!post && 
             <>
               <h2>Post Not Found</h2>
-              <p>Well, that's disappointing.</p>
+              <p>Well, that is disappointing.</p>
               <p>
                 <Link to="/">Visit Our HomePage</Link>
               </p>

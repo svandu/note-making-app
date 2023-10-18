@@ -1,9 +1,12 @@
 .home-container {
     width: 100%;
-    flex-grow: 1;
+    // flex-grow: 1;
     padding: 1rem;
     overflow-y: auto;
+    height: 100vh;
     background-color: #fff;
+    border: 1px solid red;
+    justify-content: space-between;
 
     .post a {
         text-decoration: none;
